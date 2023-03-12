@@ -1,0 +1,63 @@
+.body {
+    width: 1920px;
+    background-color: rgb(133, 219, 219);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-mem {
+    width: 100%;
+    height: 100%;
+}
+.mem-name {
+    font-weight: bold;
+    font-size: 28px;
+}
+.mem-name:hover {
+    color: blue;
+}
+.container-img {
+    display: none;
+    width: 400px;
+    height: 400px;
+}
+.container-mem:hover .container-img {
+    display: flex;
+}
+.mem {
+    width: 100%;
+}
+
+@media only screen and (max-width: 820px) {
+    .body {
+        width: 820px;
+    }
+    .mem-name {
+        font-size: 16px;
+        overflow-wrap: break-word;
+    }
+    .container-img {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .mem-name {
+        font-size: 18px;
+        overflow-wrap: break-word;
+    }
+    .container-img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
