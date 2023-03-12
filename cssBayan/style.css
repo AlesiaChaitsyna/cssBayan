@@ -1,8 +1,8 @@
 .body {
-    width: 1920px;
+    width: 100%;
     background-color: rgb(133, 219, 219);
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .container {
@@ -19,20 +19,44 @@
 .mem-name {
     font-weight: bold;
     font-size: 28px;
+    margin: 0px;
+
+}
+
+.mem-name {
+    color: blue;
 }
 .mem-name:hover {
-    color: blue;
+    color: black;
 }
 .container-img {
     display: none;
     width: 400px;
     height: 400px;
 }
+
+.container-mem:hover .cross {
+    background-image: url("./icons8-галочка-50.png");
+    background-size: cover;
+}
 .container-mem:hover .container-img {
     display: flex;
 }
 .mem {
     width: 100%;
+}
+
+.cross {
+    width: 30px;
+    height: 30px;
+    background-image: url("./icons8-крестик-78.png");
+    background-size: cover;
+}
+
+
+.title-container {
+    display: flex;
+    height: 80px;
 }
 
 @media only screen and (max-width: 820px) {
